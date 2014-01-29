@@ -9,9 +9,6 @@ all:
 run:
 	./$(TARGET)
 
-clean:
-	rm $(TARGET)
-
 # Please do as you like, if you wanna do these following features
 # passgen:
 # 	./$(TARGET) > $(BATCHFILE)
@@ -19,6 +16,5 @@ clean:
 # setpass:
 # 	chpasswd < $(BATCHFILE)
 
-# clean:
-# 	rm $(TARGET) $(BATCHFILE)
-
+clean:
+	rm -f $(TARGET) $(BATCHFILE)
